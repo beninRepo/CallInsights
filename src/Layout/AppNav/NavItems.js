@@ -1,14 +1,14 @@
 export const MainNav = [
     {
         icon: 'pe-7s-rocket',
-        label: 'Dashboard',
+        label: 'CDR Dashboard',
         to: '#/dashboards/basic',
     },
 ];
 export const ComponentsNav = [
     {
-        icon: 'pe-7s-diamond',
-        label: 'Elements',
+        icon: 'pe-7s-display1',
+        label: 'CDR report',
         content: [
             {
                 label: 'Standard Buttons',
@@ -46,8 +46,8 @@ export const ComponentsNav = [
         ],
     },
     {
-        icon: 'pe-7s-car',
-        label: 'Components',
+        icon: 'pe-7s-note2',
+        label: 'Vlog report',
         content: [
             {
                 label: 'Tabs',
@@ -80,39 +80,39 @@ export const ComponentsNav = [
         ],
     },
     {
-        icon: 'pe-7s-display2',
-        label: 'Regular Tables',
+        icon: 'pe-7s-bell',
+        label: 'Alert',
         to: '#/tables/regular-tables',
     },
 ];
 export const FormsNav = [
     {
-        icon: 'pe-7s-light',
-        label: 'Controls',
+        icon: 'pe-7s-cash',
+        label: 'Tarrif',
         to: '#/forms/controls',
     },
     {
-        icon: 'pe-7s-eyedropper',
-        label: 'Layouts',
+        icon: 'pe-7s-config',
+        label: 'Dynamic Dashboard',
         to: '#/forms/layouts',
     },
     {
-        icon: 'pe-7s-pendrive',
-        label: 'Validation',
+        icon: 'pe-7s-headphones',
+        label: 'Extension',
         to: '#/forms/validation',
     },
 ];
 export const WidgetsNav = [
     {
-        icon: 'pe-7s-graph2',
-        label: 'Dashboard Boxes',
+        icon: 'pe-7s-users',
+        label: 'Contat List',
         to: '#/widgets/dashboard-boxes',
     },
 ];
 export const ChartsNav = [
     {
-        icon: 'pe-7s-graph2',
-        label: 'ChartJS',
+        icon: 'pe-7s-user',
+        label: 'Account settings',
         to: '#/charts/chartjs',
     },
 ];

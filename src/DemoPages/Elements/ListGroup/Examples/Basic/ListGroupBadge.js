@@ -1,14 +1,22 @@
 import React from 'react';
 import { ListGroup, ListGroupItem, Badge } from 'reactstrap';
-
+const divStyle = {
+    overflowY: 'scroll',
+    height: '255px',
+    position: 'relative'
+    
+};
 export default class ListGroupBadge extends React.Component {
   render() {
-    return (
+      return (
+          <div style={divStyle}>
       <ListGroup>
-        <ListGroupItem className="justify-content-between">Cras justo odio <Badge pill>14</Badge> </ListGroupItem>
-        <ListGroupItem className="justify-content-between">Dapibus ac facilisis in <Badge pill>2</Badge> </ListGroupItem>
-        <ListGroupItem className="justify-content-between">Morbi leo risus <Badge pill>1</Badge> </ListGroupItem>
-      </ListGroup>
+        <ListGroupItem className="justify-content-between">Others <Badge pill>38</Badge> </ListGroupItem>
+            <ListGroupItem className="justify-content-between">DEP <Badge pill>12</Badge> </ListGroupItem>
+
+        
+              </ListGroup>
+          </div>
     );
   }
 }

@@ -13,7 +13,7 @@ import UserBox from './Components/UserBox';
 class Header extends React.Component {
     render() {
         let {
-            headerBackgroundColor,
+            
             enableMobileMenuSmall,
             enableHeaderShadow
         } = this.props;
@@ -21,7 +21,7 @@ class Header extends React.Component {
             <Fragment>
                 <ReactCSSTransitionGroup
                     component="div"
-                    className={cx("app-header", headerBackgroundColor, {'header-shadow': enableHeaderShadow})}
+                    className={cx("app-header",  {'header-shadow': enableHeaderShadow})}
                     transitionName="HeaderAnimation"
                     transitionAppear={true}
                     transitionAppearTimeout={1500}
@@ -34,9 +34,7 @@ class Header extends React.Component {
                         "app-header__content",
                         {'header-mobile-open': enableMobileMenuSmall},
                     )}>
-                        <div className="app-header-left">
-                            <SearchBox/>
-                        </div>
+                        
                         <div className="app-header-right">
                             <UserBox/>
                         </div>

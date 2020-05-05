@@ -8,29 +8,29 @@ export default class TableHover extends React.Component {
         <thead>
           <tr>
             <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
+            <th>Number</th>
+            <th>Count</th>
+          
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <td>02457854</td>
+            <td>15</td>
+            
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
+            <td>011245878</td>
+            <td>10</td>
+           
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
+            <td>9784521548</td>
+            <td>4</td>
+           
           </tr>
         </tbody>
       </Table>

@@ -8,41 +8,41 @@ export default class TableResponsive extends React.Component {
         <thead>
           <tr>
             <th>#</th>
-            <th>Table heading</th>
-            <th>Table heading</th>
-            <th>Table heading</th>
-            <th>Table heading</th>
-            <th>Table heading</th>
-            <th>Table heading</th>
+            <th>Caller/Dailed</th>
+            <th>DID</th>
+            <th>Extension</th>
+            <th>End Status</th>
+            <th>Direction</th>
+            
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
+                    <td>325468756</td>
+                    <td></td>
+                    <td>602</td>
+                    <td>Transfer</td>
+                    <td>IN</td>
+            
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
+                    <td>5246871235</td>
+                    <td></td>
+                    <td>401</td>
+                    <td>No Answer</td>
+                    <td>IN</td>
+            
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
+                    <td>0235497885</td>
+                    <td></td>
+                    <td>989</td>
+                    <td></td>
+                    <td>IN</td>
+            
           </tr>
         </tbody>
       </Table>
