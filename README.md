@@ -1,7 +1,6 @@
 # CallInsights
 
 ### Installation
-Download and uncompress the theme package archive in your desired folder location.
 
 Download and install Node.js from nodejs.org/en/download/
 
