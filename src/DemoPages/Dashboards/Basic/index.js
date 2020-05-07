@@ -13,6 +13,10 @@ import TableResponsive from '../../../DemoPages/Tables/RegularTables/Examples/Ta
 import TableSizing from '../../../DemoPages/Tables/RegularTables/Examples/TableSizing';
 import TableExample from '../../../DemoPages/Tables/RegularTables/Examples/Table';
 import TableHover from '../../../DemoPages/Tables/RegularTables/Examples/TableHover';
+import MissedCalls from '../../../DemoPages/Tables/RegularTables/Examples/MissedCall';
+import Calls from '../../../DemoPages/Tables/RegularTables/Examples/Calls';
+import Departments from '../../../DemoPages/Tables/RegularTables/Examples/Departments';
+import TopMissedCalls from '../../../DemoPages/Tables/RegularTables/Examples/TopMissedCalls';
 //C: \working\Clone\CallInsights\src\Layout\AppMain\PageTitle.js
 import PageTitle from '../../../Layout/AppMain/PageTitle';
 import DynamicDoughnutExample from '../../Charts/ChartJs/Examples/dynamicDoughnut';
@@ -445,7 +449,7 @@ export default class AnalyticsDashboard1 extends Component {
                                                 <Card className="main-card mb-3">
                                                     <CardBody>
                                                         <CardTitle>Department</CardTitle>
-                                                        <TableSizing />
+                                                        <Departments />
                                                     </CardBody>
                                                 </Card>
                                                 </CardBody>
@@ -465,7 +469,7 @@ export default class AnalyticsDashboard1 extends Component {
                                                 <Card className="main-card mb-3">
                                                     <CardBody>
                                                         <CardTitle>Top Missed Calls</CardTitle>
-                                                        <TableHover />
+                                                        <TopMissedCalls />
                                                     </CardBody>
                                                 </Card>
                                             </CardBody>
@@ -500,7 +504,7 @@ export default class AnalyticsDashboard1 extends Component {
                                                 <Card className="main-card mb-3">
                                                     <CardBody>
                                                         <CardTitle>Last 10 Missed Calls</CardTitle>
-                                                        <TableResponsive />
+                                                        <MissedCalls />
                                                     </CardBody>
                                                 </Card>
                                             </CardBody>
@@ -510,7 +514,7 @@ export default class AnalyticsDashboard1 extends Component {
                                                 <Card className="main-card mb-3">
                                                      <CardBody>
                                                         <CardTitle>Last 10 Calls</CardTitle>
-                                                        <TableResponsive />
+                                                        <Calls />
                                                      </CardBody>
                                                 </Card>
                                            </CardBody>
