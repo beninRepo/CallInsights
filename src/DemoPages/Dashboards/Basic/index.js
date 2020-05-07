@@ -19,9 +19,11 @@ import Departments from '../../../DemoPages/Tables/RegularTables/Examples/Depart
 import TopMissedCalls from '../../../DemoPages/Tables/RegularTables/Examples/TopMissedCalls';
 //C: \working\Clone\CallInsights\src\Layout\AppMain\PageTitle.js
 import PageTitle from '../../../Layout/AppMain/PageTitle';
+import ExtensionChart from '../../Charts/ChartJs/Examples/ExtensionChart';
 import DynamicDoughnutExample from '../../Charts/ChartJs/Examples/dynamicDoughnut';
 import ListGroupBadge from '../../Elements/ListGroup/Examples/Basic/ListGroupBadge';
 import TabExample from '../../Components/Tabs';
+import DepartmentCostChart from '../../Charts/ChartJs/Examples/DepartmentCostChart';
 
 
 
@@ -150,207 +152,21 @@ export default class AnalyticsDashboard1 extends Component {
                                     </CardHeader>
                                     <TabContent activeTab={this.state.activeTab1}>
                                         <TabPane tabId="11">
-                                            <CardBody className="pt-2">
-                                                <Row className="mt-3">
-                                                    <Col md="6">
-                                                        <div className="widget-content">
-                                                            <div className="widget-content-outer">
-                                                                <div className="widget-content-wrapper">
-                                                                    <div className="widget-content-left mr-3">
-                                                                        <div className="widget-numbers fsize-3 text-muted">
-                                                                            63%
-                                                                        </div>
-                                                                    </div>
-                                                                    <div className="widget-content-right">
-                                                                        <div className="text-muted opacity-6">
-                                                                            Count
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="widget-progress-wrapper mt-1">
-                                                                    <Progress
-                                                                        className="progress-bar-sm progress-bar-animated-alt"
-                                                                        color="danger"
-                                                                        value="63"/>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </Col>
-                                                    <Col md="6">
-                                                        <div className="widget-content">
-                                                            <div className="widget-content-outer">
-                                                                <div className="widget-content-wrapper">
-                                                                    <div className="widget-content-left mr-3">
-                                                                        <div className="widget-numbers fsize-3 text-muted">
-                                                                            32%
-                                                                        </div>
-                                                                    </div>
-                                                                    <div className="widget-content-right">
-                                                                        <div className="text-muted opacity-6">
-                                                                            Cost
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="widget-progress-wrapper mt-1">
-                                                                    <Progress
-                                                                        className="progress-bar-sm progress-bar-animated-alt"
-                                                                        color="success"
-                                                                        value="32"/>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </Col>
-                                                </Row>
-                                                <div className="divider mt-4"/>
-                                                <Row>
-                                                   
-                                                </Row>
-                                            </CardBody>
+                                            
                                             <div className="widget-chart p-0">
-                                                <div className="widget-chart-content">
-                                                    <div className="widget-description mt-0 text-warning">
-                                                        <FontAwesomeIcon icon={faArrowLeft}/>
-                                                        <span className="pl-1">175.5%</span>
-                                                        <span className="text-muted opacity-8 pl-1">Cost Forecast</span>
-                                                    </div>
-                                                </div>
-                                                <ResponsiveContainer height={187}>
-                                                    <AreaChart data={data} margin={{top: -45, right: 0, left: 0, bottom: 0}}>
-                                                        <defs>
-                                                            <linearGradient id="colorPv2" x1="0" y1="0" x2="0" y2="1">
-                                                                <stop offset="10%" stopColor="var(--warning)" stopOpacity={0.7}/>
-                                                                <stop offset="90%" stopColor="var(--warning)" stopOpacity={0}/>
-                                                            </linearGradient>
-                                                        </defs>
-                                                        <Tooltip/>
-                                                        <Area type='monotoneX' dataKey='uv' stroke='var(--warning)' strokeWidth={2} fillOpacity={1}
-                                                              fill="url(#colorPv2)"/>
-                                                    </AreaChart>
-                                                </ResponsiveContainer>
+                                                <CardBody>
+                                                   <ExtensionChart />
+                                                </CardBody>
+                                                
                                             </div>
                                         </TabPane>
                                         <TabPane tabId="22">
                                             <div className="widget-chart p-0">
-                                                <ResponsiveContainer height={179}>
-                                                    <ComposedChart data={data2}>
-                                                        <CartesianGrid stroke="#ffffff"/>
-                                                        <Area type="monotone" dataKey="amt" fill="#f7ffd0" stroke="#85a200"/>
-                                                        <Bar dataKey="pv" barSize={16} fill="var(--primary)"/>
-                                                        <Line type="monotone" dataKey="uv" strokeWidth="3" stroke="var(--danger)"/>
-                                                    </ComposedChart>
-                                                </ResponsiveContainer>
-                                                <div className="widget-chart-content mt-3 mb-2">
-                                                    <div className="widget-description mt-0 text-success">
-                                                        <FontAwesomeIcon icon={faArrowUp}/>
-                                                        <span className="pl-2 pr-2">37.2%</span>
-                                                        <span className="text-muted opacity-8">performance increase</span>
-                                                    </div>
-                                                </div>
+                                                <CardBody>
+                                                    <DepartmentCostChart />
+                                                </CardBody>
                                             </div>
-                                            <CardBody className="pt-2">
-                                                <Row>
-                                                    <Col md="6">
-                                                        <div className="widget-content">
-                                                            <div className="widget-content-outer">
-                                                                <div className="widget-content-wrapper">
-                                                                    <div className="widget-content-left mr-3">
-                                                                        <div className="widget-numbers fsize-3 text-muted">
-                                                                            230 AED
-                                                                        </div>
-                                                                    </div>
-                                                                    <div className="widget-content-right">
-                                                                        <div className="text-muted opacity-6">
-                                                                            Department 1
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="widget-progress-wrapper mt-1">
-                                                                    <Progress
-                                                                        className="progress-bar-sm progress-bar-animated-alt"
-                                                                        color="warning"
-                                                                        value="23"/>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </Col>
-                                                    <Col md="6">
-                                                        <div className="widget-content">
-                                                            <div className="widget-content-outer">
-                                                                <div className="widget-content-wrapper">
-                                                                    <div className="widget-content-left mr-3">
-                                                                        <div className="widget-numbers fsize-3 text-muted">
-                                                                            760 AED
-                                                                        </div>
-                                                                    </div>
-                                                                    <div className="widget-content-right">
-                                                                        <div className="text-muted opacity-6">
-                                                                             Department 2
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="widget-progress-wrapper mt-1">
-                                                                    <Progress
-                                                                        className="progress-bar-sm progress-bar-animated-alt"
-                                                                        color="info"
-                                                                        value="76"/>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </Col>
-                                                </Row>
-                                                <div className="divider mt-4"/>
-                                                <Row>
-                                                    <Col md="6">
-                                                        <div className="widget-content">
-                                                            <div className="widget-content-outer">
-                                                                <div className="widget-content-wrapper">
-                                                                    <div className="widget-content-left mr-3">
-                                                                        <div className="widget-numbers fsize-3 text-muted">
-                                                                            830 AED
-                                                                        </div>
-                                                                    </div>
-                                                                    <div className="widget-content-right">
-                                                                        <div className="text-muted opacity-6">
-                                                                             Department 3
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="widget-progress-wrapper mt-1">
-                                                                    <Progress
-                                                                        className="progress-bar-sm progress-bar-animated-alt"
-                                                                        color="danger"
-                                                                        value="83"/>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </Col>
-                                                    <Col md="6">
-                                                        <div className="widget-content">
-                                                            <div className="widget-content-outer">
-                                                                <div className="widget-content-wrapper">
-                                                                    <div className="widget-content-left mr-3">
-                                                                        <div className="widget-numbers fsize-3 text-muted">
-                                                                            480 AED
-                                                                        </div>
-                                                                    </div>
-                                                                    <div className="widget-content-right">
-                                                                        <div className="text-muted opacity-6">
-                                                                             Department 4
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div className="widget-progress-wrapper mt-1">
-                                                                    <Progress
-                                                                        className="progress-bar-sm progress-bar-animated-alt"
-                                                                        color="alternate"
-                                                                        value="48"/>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </Col>
-                                                </Row>
-
-                                            </CardBody>
+                                            
                                         </TabPane>
 
                                         <TabPane tabId="33">

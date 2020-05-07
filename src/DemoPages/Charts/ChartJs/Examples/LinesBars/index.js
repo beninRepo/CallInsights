@@ -1,10 +1,12 @@
 import React, {Fragment} from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import LineExample from '../line';
+import LineExample from '../ExtensionChart';
 import LineExample2 from '../line2';
 import BarExample from '../bar';
 import HorizontalBarExample from '../horizontalBar';
 import MixExample from '../mix';
+import DepartmetCostChart from '../DepartmentCostChart'
+
 
 import {
     Row, Col,
@@ -36,7 +38,7 @@ export default class ChartJsLinesBars extends React.Component {
                             <Card className="main-card mb-3">
                                 <CardBody>
                                     <CardTitle>Animated Line Chart</CardTitle>
-                                    <MixExample/>
+                                    <DepartmetCostChart/>
                                 </CardBody>
                             </Card>
                         </Col>
