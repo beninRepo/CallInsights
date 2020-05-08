@@ -1,6 +1,17 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\DemoPages",
+    "\\src\\DemoPages\\Charts",
+    "\\src\\DemoPages\\Charts\\ChartJs",
+    "\\src\\DemoPages\\Charts\\ChartJs\\Examples",
+    "\\src\\DemoPages\\Charts\\ChartJs\\Examples\\LinesBars",
+    "\\src\\DemoPages\\Dashboards\\Basic",
+    "\\src\\DemoPages\\Tables",
+    "\\src\\DemoPages\\Tables\\RegularTables",
+    "\\src\\DemoPages\\Tables\\RegularTables\\Examples"
   ],
+  "SelectedNode": "\\config",
   "PreviewInSolutionExplorer": false
 }

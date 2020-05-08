@@ -1,25 +1,25 @@
 import React from 'react';
-import {Doughnut} from 'react-chartjs-2';
+import { Doughnut } from 'react-chartjs-2';
 
-function getRandomInt (min, max) {
+function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 
 const getState = () => ({
     labels: [
-       'Incoming',
+        'Incoming',
         'Outgoing'
     ],
     datasets: [{
         data: [getRandomInt(50, 200), getRandomInt(100, 150)],
         backgroundColor: [
-            
+
             '#71deb9',
             '#ef869e'
         ],
         hoverBackgroundColor: [
-            
+
             '#4dd6a7',
             '#eb6886'
         ]
@@ -45,6 +45,7 @@ export default createReactClass({
         return (
             <div>
                 <Doughnut data={this.state} />
+
             </div>
         );
     }
