@@ -24,6 +24,9 @@ import DynamicDoughnutExample from '../../Charts/ChartJs/Examples/dynamicDoughnu
 import ListGroupBadge from '../../Elements/ListGroup/Examples/Basic/ListGroupBadge';
 import TabExample from '../../Components/Tabs';
 import DepartmentCostChart from '../../Charts/ChartJs/Examples/DepartmentCostChart';
+import CostChart from '../../Charts/ChartJs/Examples/CostChart';
+import ReactStoreIndicator from 'react-score-indicator';
+import CountUp from 'react-countup';
 
 
 
@@ -80,7 +83,7 @@ export default class AnalyticsDashboard1 extends Component {
         this.toggle3 = this.toggle3.bind(this);
 
     }
-
+   
     toggle() {
         this.setState(prevState => ({
             dropdownOpen: !prevState.dropdownOpen
@@ -140,8 +143,8 @@ export default class AnalyticsDashboard1 extends Component {
                                             }}>Extensions</Button>
                                             <Button outline
                                                     className={"ml-1 btn-pill btn-wide border-0 btn-transition " + classnames({active: this.state.activeTab1 === '22'})}
-                                                    color="primary" onClick={() => {
-                                                this.toggle1('22');
+                                                color="primary" onClick={() => {
+                                                    this.toggle1('22'); 
                                                 }}>Department cost</Button>
                                             <Button outline
                                                 className={"ml-1 btn-pill btn-wide border-0 btn-transition " + classnames({ active: this.state.activeTab1 === '33' })}
@@ -177,7 +180,7 @@ export default class AnalyticsDashboard1 extends Component {
                                                             <div className="widget-chart-content">
                                                                 <div className="icon-wrapper rounded-circle">
                                                                     <div className="icon-wrapper-bg bg-primary" />
-                                                                    <i className="lnr-cog text-primary" />
+                                                                    <i className="lnr-phone-handset text-primary" />
                                                                 </div>
                                                                 <div className="widget-numbers">
                                                                     45.8k
@@ -191,13 +194,8 @@ export default class AnalyticsDashboard1 extends Component {
                                                                 </div>
                                                             </div>
                                                             <div className="widget-chart-wrapper chart-wrapper-relative">
-                                                                <ResponsiveContainer height={100}>
-                                                                    <LineChart data={data}
-                                                                        margin={{ top: 5, right: 5, left: 5, bottom: 0 }}>
-                                                                        <Line type='monotone' dataKey='pv' stroke='#3ac47d'
-                                                                            strokeWidth={3} />
-                                                                    </LineChart>
-                                                                </ResponsiveContainer>
+                                                                <CostChart/>
+                                                               
                                                             </div>
                                                         </div>
                                                     </Col>
@@ -206,26 +204,23 @@ export default class AnalyticsDashboard1 extends Component {
                                                             <div className="widget-chart-content">
                                                                 <div className="icon-wrapper rounded-circle">
                                                                     <div className="icon-wrapper-bg bg-danger" />
-                                                                    <i className="lnr-laptop-phone text-danger" />
+                                                                    <i className="lnr-calendar-full text-danger" />
                                                                 </div>
+                                                                <hr /> 
                                                                 <div className="widget-numbers">
-                                                                    5.82k
+                                                                    June
                                                 </div>
-                                                                <div className="widget-subheading">
-                                                                   Count
-                                                </div>
-                                                                <div className="widget-description text-danger">
-                                                                    <FontAwesomeIcon icon={faAngleDown} />
-                                                                    <span className="pl-1">54.1%</span>
-                                                                </div>
+                                                               <hr/> 
+                                                               
                                                             </div>
-                                                            <div className="widget-chart-wrapper chart-wrapper-relative">
-                                                                <ResponsiveContainer height={100}>
-                                                                    <BarChart data={data}>
-                                                                        <Bar dataKey='uv' fill='#81a4ff' stroke='#3f6ad8' strokeWidth={2} />
-                                                                    </BarChart>
-                                                                </ResponsiveContainer>
-                                                            </div>
+
+                                                            <ReactStoreIndicator 
+                                                                
+                                                                 value={180}
+                                                                maxValue={500}
+                                                                
+                                                                />
+                                                           
                                                         </div>
                                                     </Col>
                                                 </Row>
