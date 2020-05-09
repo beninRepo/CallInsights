@@ -4,6 +4,7 @@ import {Route} from 'react-router-dom';
 // DASHBOARDS
 
 import BasicDashboard from './Basic/';
+import DynamicDashboard from './Dynamic/Dynamic';
 
 // Layout
 
@@ -18,7 +19,8 @@ const Dashboards = ({match}) => (
             <AppSidebar/>
             <div className="app-main__outer">
                 <div className="app-main__inner">
-                    <Route path={`${match.url}/basic`} component={BasicDashboard}/>
+                    <Route path={`${match.url}/basic`} component={BasicDashboard} />
+                    <Route path={`${match.url}/dynamic`} component={DynamicDashboard} />
                 </div>
                 <AppFooter/>
             </div>

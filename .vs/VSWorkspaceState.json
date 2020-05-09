@@ -4,14 +4,13 @@
     "\\src",
     "\\src\\DemoPages",
     "\\src\\DemoPages\\Charts",
-    "\\src\\DemoPages\\Charts\\ChartJs",
-    "\\src\\DemoPages\\Charts\\ChartJs\\Examples",
-    "\\src\\DemoPages\\Charts\\ChartJs\\Examples\\LinesBars",
-    "\\src\\DemoPages\\Dashboards\\Basic",
+    "\\src\\DemoPages\\Dashboards",
     "\\src\\DemoPages\\Tables",
     "\\src\\DemoPages\\Tables\\RegularTables",
-    "\\src\\DemoPages\\Tables\\RegularTables\\Examples"
+    "\\src\\DemoPages\\Tables\\RegularTables\\Examples",
+    "\\src\\Layout",
+    "\\src\\Layout\\AppNav"
   ],
-  "SelectedNode": "\\config",
+  "SelectedNode": "\\src\\DemoPages\\Tables\\RegularTables\\Examples\\TopMissedCalls.js",
   "PreviewInSolutionExplorer": false
 }
