@@ -3,6 +3,10 @@ import {Route} from 'react-router-dom';
 
 // BUTTONS
 
+//CDR report
+
+import crdReports from './Report/CDR/';
+
 // Standard
 
 import ButtonsStandard from './Button/Standard/';
@@ -47,6 +51,10 @@ const Elements = ({match}) => (
             <AppSidebar/>
             <div className="app-main__outer">
                 <div className="app-main__inner">
+
+                    {/* Report */}
+
+                    <Route path={`${match.url}/cdr-report`} component={crdReports} />
 
                     {/* Buttons */}
 

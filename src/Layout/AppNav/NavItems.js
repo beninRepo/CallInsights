@@ -4,6 +4,11 @@ export const MainNav = [
         label: 'CDR Dashboard',
         to: '#/dashboards/basic',
     },
+    {
+        icon: 'pe-7s-display2',
+        label: 'Dynamic Dashboard',
+        to: '#/dashboards/dynamic',
+    },
 ];
 export const ComponentsNav = [
     {
@@ -11,8 +16,8 @@ export const ComponentsNav = [
         label: 'CDR report',
         content: [
             {
-                label: 'Standard Buttons',
-                to: '#/elements/buttons-standard',
+                label: 'CDR Report',
+                to: '#/elements/cdr-report',
             },
             {
                 label: 'Dropdowns',
