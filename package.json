@@ -10,6 +10,7 @@
     "url": "git+https://github.com/DashboardPack/architectui-react-theme-free"
   },
   "dependencies": {
+    "@date-fns/upgrade": "^1.0.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
     "@fortawesome/free-brands-svg-icons": "^5.7.2",
     "@fortawesome/free-solid-svg-icons": "^5.7.2",
@@ -56,6 +57,7 @@
     "jspdf-autotable": "^3.5.3",
     "jw-react-pagination": "^1.0.7",
     "lorem-ipsum": "^1.0.6",
+    "material-table": "^1.57.2",
     "moment": "^2.24.0",
     "mui-datatables": "^2.14.0",
     "namor": "^1.1.1",
