@@ -73,7 +73,7 @@ class BasicExample extends Component {
                     transitionLeave={false}>
                     <div>
                         <Row>
-                            <Col md="4">
+                            <Col md="2">
                                 <div className="card mb-3 bg-primary widget-chart text-white card-border">
                                     <div className="icon-wrapper rounded-circle">
                                         <div className="icon-wrapper-bg bg-white opacity-1"/>
@@ -91,7 +91,7 @@ class BasicExample extends Component {
                                     </div>
                                 </div>
                             </Col>
-                            <Col md="4">
+                            <Col md="2">
                                 <div className="card mb-3 bg-success widget-chart text-white card-border">
                                     <div className="widget-chart-actions">
                                         <UncontrolledButtonDropdown>
@@ -243,7 +243,7 @@ class BasicExample extends Component {
                                     <div className="widget-numbers">
                                         45.8k
                                     </div>
-                                    <div className="widget-subheading">
+                                    <div className="widget-numbers">
                                         Total Views
                                     </div>
                                     <div className="widget-description text-dark">
