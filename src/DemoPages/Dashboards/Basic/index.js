@@ -114,7 +114,7 @@ export default class AnalyticsDashboard1 extends Component {
                     transitionEnter={false}
                     transitionLeave={false}>
                     <div>
-                        <PageTitle heading="Report"
+                        <PageTitle heading="Basic Dashboard"
                            
                             icon="pe-7s-display2 icon-gradient bg-mean-fruit" />
                         

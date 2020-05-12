@@ -27,25 +27,12 @@ export default class TitleComponent2 extends Component {
         })
     }
 
-    notify22 = () => this.toastId = toast("Another toastify example!!!", {
-        transition: Slide,
-        closeButton: true,
-        autoClose: 5000,
-        position: 'bottom-center',
-        type: 'success'
-    });
+   
 
     render() {
         return (
             <Fragment>
-                <Button className="btn-shadow mr-3" onClick={this.notify22} color="dark"
-                        id="Tooltip-123">
-                    <FontAwesomeIcon icon={faStar}/>
-                </Button>
-                <UncontrolledTooltip placement="left" target={'Tooltip-123'}>
-                    Show a Toastify notification example!
-                </UncontrolledTooltip>
-                <UncontrolledDropdown className="d-inline-block">
+             <UncontrolledDropdown className="d-inline-block">
                     <DropdownToggle color="info" className="btn-shadow" caret>
                         <span className="btn-icon-wrapper pr-2 opacity-7">
                             <FontAwesomeIcon icon={faBusinessTime}/>
@@ -55,33 +42,24 @@ export default class TitleComponent2 extends Component {
                     <DropdownMenu right>
                         <Nav vertical>
                             <NavItem>
-                                <NavLink href="javascript:void(0);">
-                                    <i className="nav-link-icon lnr-inbox"> </i>
-                                    <span>Latest</span>
-                                    <div className="ml-auto badge badge-pill badge-secondary">86
-                                    </div>
-                                </NavLink>
+                                <NavLink href='#/dashboards/basic'>
+                                    <i className="nav-link-icon lnr-rocket"> </i>
+                                    <span>CDR Dashboard</span>
+                                   </NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="javascript:void(0);">
-                                    <i className="nav-link-icon lnr-book"> </i>
-                                    <span>Search results</span>
-                                    <div className="ml-auto badge badge-pill badge-danger">5</div>
-                                </NavLink>
+                                <NavLink href='#/dashboards/dynamic'>
+                                    <i className="nav-link-icon lnr-license"> </i>
+                                    <span>Dynamic Dashboard</span>
+                                   </NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="javascript:void(0);">
-                                    <i className="nav-link-icon lnr-picture"> </i>
-                                    <span>Export results</span>
+                                <NavLink href='#/elements/cdr-report'>
+                                    <i className="nav-link-icon lnr-database"> </i>
+                                    <span>CDR Report</span>
                                 </NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink disabled href="javascript:void(0);">
-                                    <i className="nav-link-icon lnr-file-empty"> </i>
-                                    <span>Configuration</span>
-                                </NavLink>
-                            </NavItem>
-                        </Nav>
+                            </Nav>
                     </DropdownMenu>
                 </UncontrolledDropdown>
             </Fragment>

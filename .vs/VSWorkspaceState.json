@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\node_modules\\@types\\lodash\\common",
+    "\\public",
     "\\src",
+    "\\src\\assets",
+    "\\src\\assets\\layout\\main",
+    "\\src\\assets\\layout\\main\\themes",
     "\\src\\DemoPages",
-    "\\src\\DemoPages\\Charts",
-    "\\src\\DemoPages\\Dashboards",
-    "\\src\\DemoPages\\Tables",
-    "\\src\\DemoPages\\Tables\\RegularTables",
-    "\\src\\DemoPages\\Tables\\RegularTables\\Examples",
     "\\src\\Layout",
-    "\\src\\Layout\\AppNav"
+    "\\src\\Layout\\AppLogo"
   ],
-  "SelectedNode": "\\src\\DemoPages\\Tables\\RegularTables\\Examples\\TopMissedCalls.js",
+  "SelectedNode": "\\public\\index.html",
   "PreviewInSolutionExplorer": false
 }

@@ -13,41 +13,41 @@ export const MainNav = [
 export const ComponentsNav = [
     {
         icon: 'pe-7s-display1',
-        label: 'CDR report',
+        label: 'CDR Report',
         content: [
             {
                 label: 'CDR Report',
                 to: '#/elements/cdr-report',
             },
-            {
-                label: 'Dropdowns',
-                to: '#/elements/dropdowns',
+            //{
+            //    label: 'Dropdowns',
+            //    to: '#/elements/dropdowns',
 
-            },
-            {
-                label: 'Icons',
-                to: '#/elements/icons',
-            },
-            {
-                label: 'Badges',
-                to: '#/elements/badges-labels',
-            },
-            {
-                label: 'Cards',
-                to: '#/elements/cards',
-            },
-            {
-                label: 'List Groups',
-                to: '#/elements/list-group',
-            },
-            {
-                label: 'Navigation Menus',
-                to: '#/elements/navigation',
-            },
-            {
-                label: 'Utilities',
-                to: '#/elements/utilities',
-            },
+            //},
+            //{
+            //    label: 'Icons',
+            //    to: '#/elements/icons',
+            //},
+            //{
+            //    label: 'Badges',
+            //    to: '#/elements/badges-labels',
+            //},
+            //{
+            //    label: 'Cards',
+            //    to: '#/elements/cards',
+            //},
+            //{
+            //    label: 'List Groups',
+            //    to: '#/elements/list-group',
+            //},
+            //{
+            //    label: 'Navigation Menus',
+            //    to: '#/elements/navigation',
+            //},
+            //{
+            //    label: 'Utilities',
+            //    to: '#/elements/utilities',
+            //},
         ],
     },
     {

@@ -9,7 +9,7 @@ import CdrReports from './All/cdrReport';
 
 const tabsContent = [
     {
-        title: 'CDR report',
+        title: 'CDR Report',
         content: <CdrReports/>
     },
 ];
@@ -31,8 +31,8 @@ export default class CdrReport extends React.Component {
             <Fragment>
               
                 <PageTitle
-                    heading="CDR report"
-                    icon="pe-7s-plane icon-gradient bg-tempting-azure"
+                    heading="CDR Report"
+                    icon="pe-7s-news-paper icon-gradient bg-tempting-azure"
                 />
                 <Tabs transform={false} showInkBar={true} items={getTabs()} />
             </Fragment>
