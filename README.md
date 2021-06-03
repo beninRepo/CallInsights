@@ -5,7 +5,7 @@ Download and uncompress the theme package archive in your desired folder locatio
 
 Download and install Node.js from nodejs.org/en/download/
 
-Install the latest version of npm. This will be useful when running all the build commands. Run the following in a command line, either your IDE's Terminal window or in a Windows Command Prompt.
+Install the latest version of npm. This will be useful when running all the build commands. Run the following in a command line, either your IDE's Terminal window or in a Windows Command Prompt..
 
                                                             
     npm install --global npm@latest
